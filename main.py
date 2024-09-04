@@ -32,8 +32,7 @@ while True:
             break
         else:
                 print('Opção inválida/n')
-    except Exception:
-        print('Valor inválido\n')
-    
-    print(f'Saldo: R$ {bank_balance:.2f}\n')
-    print(f'extrato: {bank_statement}\n')
+    except Exception as ex:
+        print(f'Erro {ex}\n')
+
+
